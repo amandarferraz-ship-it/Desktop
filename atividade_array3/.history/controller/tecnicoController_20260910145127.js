@@ -1,0 +1,1 @@
+import { Tecnico } from "../model/Tecnico";

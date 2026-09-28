@@ -1,0 +1,35 @@
+import { cadastrar, atualizar, deletar, listar } from "../repository/pedidorepository.js";
+
+export function cadastrarPedidos(pedido){
+    cadastrarPedidos(pedido);
+}
+
+export function listarPedidos() {
+    const pedidos = listar();  
+
+    for (let i = 0; i < pedidos.length; i++) {
+
+        console.log("\n____ Informações do Pedido: ____");
+        console.log("Índice: " + i);
+        console.log("Código: " + pedidos[i].codigo);
+        console.log("Cliente: " + pedidos[i].cliente);
+        console.log("Descrição: " + pedidos[i].descricao);
+        console.log("Valor: R$" + pedidos[i].valor.toFixed(2));
+        console.log("Status: " + pedidos[i].getStatus);
+
+        pedidos[i]
+
+
+
+    }
+}
+
+
+export function deletarPedido(indice) {
+    deletar(indice);
+}
+
+export function atualizarPedidos(indice, pedido) {
+    atualizar(indice, pedido);
+   
+}

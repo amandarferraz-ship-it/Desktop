@@ -1,0 +1,1 @@
+import { PagamentoCartao } from "./pagamentocartao";

@@ -1,0 +1,1 @@
+import { cadastrarAlunoController, atualizarAlunoController } from "./controller/alunoController";

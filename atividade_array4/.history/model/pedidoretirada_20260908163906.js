@@ -1,0 +1,13 @@
+import { pedido } from "./pedido.js";
+
+export class retirada extends pedido {
+    constructor(codigo, cliente, descricao, valor) {
+        super(codigo, cliente, descricao, valor);
+        this.nome = data;
+    }
+
+    processar(){
+        console.log(`O pedido ficará pronto para a data ${this.data}.`);
+    }
+    
+}
